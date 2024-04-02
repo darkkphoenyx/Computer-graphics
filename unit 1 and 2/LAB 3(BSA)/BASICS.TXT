@@ -1,0 +1,16 @@
+DAA algorithm
+1. input the two line endpoints (x1,y1) and (x2,y2)
+2. plot first point (x1,y1)
+3. calculate constants deltaX = (x2,x1) and deltaY=(y2,y1)
+4.if |deltaX| > |deltaY|
+    then steps = |deltaX|
+    else
+    steps=|deltaY|
+5.calculate Xinc = deltaX / steps and Yinc = deltaY / steps
+6.for (k=0;k<steps;k++)
+    {
+        x= x + Xinc;
+        y= y + Yinc;
+        plot(ROUND(x),ROUND(y));
+    }
+7.End
